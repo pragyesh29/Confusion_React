@@ -14,23 +14,19 @@ import {Card, CardBody, CardImg, CardTitle, CardText} from 'reactstrap';
     }
 
     function RenderComments({comments}){
-        if(comments != null){
-            const comment = comments.map(comment => {
-                return (
-                    <li>
-                        {comment.comment}<br/>
-                        --{comment.author}, {new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}<br/><br/>
-                    </li>
-                );
-            });
+        const comment = comments.map(comment => {
             return (
-                <ul className="list-unstyled">
-                    {comment}
-                </ul>
+                <li>
+                    {comment.comment}<br/>
+                    --{comment.author}, {new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}<br/><br/>
+                </li>
             );
-        }else{
-            return <div></div>;
-        }
+        });
+        return (
+            <ul className="list-unstyled">
+                {comment}
+            </ul>
+        );
     }
 
     function DishDetail(props){
