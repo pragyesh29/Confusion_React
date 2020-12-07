@@ -110,7 +110,7 @@ class Contact extends Component{
                     <div className="col-12 col-sm-11 offset-sm-1">
                         <div className="btn-group" role="group">
                             <a role="button" className="btn btn-primary" href="tel: +8512349089"><i className="fa fa-phone"></i>Email</a>
-                            <a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
+                            <a href="www.skype.com" role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
                             <a role="button" className="btn btn-success" href="mailto:confusion@food.net"><i className="fa fa-envelope-o"></i> Email</a>
                         </div>
                     </div>
@@ -124,28 +124,28 @@ class Contact extends Component{
                             <FormGroup row>
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={10}>
-                                    <Input type="text" id="firstname" name="firstname" placeholder="First Name" value={this.state.firstname} onChange={this.handleInputChange} onBlur={this.handleBlur('firstname')} valid={errors.firstname == ''} invalid={errors.firstname !== ''}/>
+                                    <Input type="text" id="firstname" name="firstname" placeholder="First Name" value={this.state.firstname} onChange={this.handleInputChange} onBlur={this.handleBlur('firstname')} valid={errors.firstname === ''} invalid={errors.firstname !== ''}/>
                                     <FormFeedback>{errors.firstname}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
                                 <Col md={10}>
-                                    <Input type="text" id="lastname" name="lastname" placeholder="Last Name" value={this.state.lastname} onChange={this.handleInputChange} onBlur={this.handleBlur('lastname')} valid={errors.lastname == ''} invalid={errors.lastname !== ''}/>
+                                    <Input type="text" id="lastname" name="lastname" placeholder="Last Name" value={this.state.lastname} onChange={this.handleInputChange} onBlur={this.handleBlur('lastname')} valid={errors.lastname === ''} invalid={errors.lastname !== ''}/>
                                     <FormFeedback>{errors.lastname}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={10}>
-                                    <Input type="tel" id="telnum" name="telnum" placeholder="Tel. number" value={this.state.telnum} onChange={this.handleInputChange} onBlur={this.handleBlur('telnum')} valid={errors.telnum == ''} invalid={errors.telnum !== ''}/>
+                                    <Input type="tel" id="telnum" name="telnum" placeholder="Tel. number" value={this.state.telnum} onChange={this.handleInputChange} onBlur={this.handleBlur('telnum')} valid={errors.telnum === ''} invalid={errors.telnum !== ''}/>
                                     <FormFeedback>{errors.telnum}</FormFeedback>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="email" md={2}>Email</Label>
                                 <Col md={10}>
-                                    <Input type="email" id="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} onBlur={this.handleBlur('email')} valid={errors.email == ''} invalid={errors.email !== ''}/>
+                                    <Input type="email" id="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} onBlur={this.handleBlur('email')} valid={errors.email === ''} invalid={errors.email !== ''}/>
                                     <FormFeedback>{errors.email}</FormFeedback>
                                 </Col>
                             </FormGroup>
