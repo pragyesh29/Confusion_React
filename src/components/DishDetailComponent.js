@@ -166,7 +166,6 @@ import {FadeTransform, Fade, Stagger} from 'react-animation-components';
                     </Modal>
                 </>
             );
-            return (<h1>Hello</h1>);
         }
     }
 
