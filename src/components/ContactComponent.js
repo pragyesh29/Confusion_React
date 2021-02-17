@@ -67,28 +67,28 @@ class Contact extends Component{
                             <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={10}>
-                                    <Control.Text model=".firstname" id="firstname" name="firstname" placeholder="First Name" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15)}}/>
+                                    <Control.text model=".firstname" id="firstname" name="firstname" placeholder="First Name" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15)}}/>
                                     <Errors className="text-danger" model=".firstname" show="touched" messages={{required: 'Required', minLength: 'Must be greater than 2 characters', maxLength: 'Must be 15 characters of less'}}/>
                                 </Col>
                             </Row>
                             <Row className="form-group">
                                 <Label htmlFor="lastname" md={2}>Last Name</Label>
                                 <Col md={10}>
-                                    <Control.Text model=".lastname" id="lastname" name="lastname" placeholder="Last Name" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15)}}/>
+                                    <Control.text model=".lastname" id="lastname" name="lastname" placeholder="Last Name" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15)}}/>
                                     <Errors className="text-danger" model=".lastname" show="touched" messages={{required: 'Required', minLength: 'Must be greater than 2 characters', maxLength: 'Must be 15 characters of less'}}/>
                                 </Col>
                             </Row>
                             <Row className="form-group">
                                 <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={10}>
-                                    <Control.Text model=".telnum" id="telnum" name="telnum" placeholder="Tel. number" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15), isNumber}}/>
+                                    <Control.text model=".telnum" id="telnum" name="telnum" placeholder="Tel. number" className="form-control" validators={{required, minLength: minLength(3), maxLength: maxLength(15), isNumber}}/>
                                     <Errors className="text-danger" model=".telnum" show="touched" messages={{required: 'Required', minLength: 'Must be greater than 2 numbers', maxLength: 'Must be 15 numbers of less', isNumber: 'Must be a number'}}/>
                                 </Col>
                             </Row>
                             <Row className="form-group">
                                 <Label htmlFor="email" md={2}>Email</Label>
                                 <Col md={10}>
-                                    <Control.Text model=".email" id="email" name="email" placeholder="Email" className="form-control" validators={{required, validEmail}}/>
+                                    <Control.text model=".email" id="email" name="email" placeholder="Email" className="form-control" validators={{required, validEmail}}/>
                                     <Errors className="text-danger" model=".email" show="touched" messages={{required: 'Required', validEmail: 'Invalid Email address'}}/>
                                 </Col>
                             </Row>
@@ -96,23 +96,23 @@ class Contact extends Component{
                                 <Col md={{size: 6, offset:2}}>
                                     <div className="form-check">
                                         <Label check>
-                                            <Control.Checkbox model=".agree" name="agree" className="form-check-input"/>
+                                            <Control.checkbox model=".agree" name="agree" className="form-check-input"/>
                                             {' '}
                                             <strong>May we contact you?</strong>
                                         </Label>
                                     </div>
                                 </Col>
                                 <Col md={{size: 3, offset:1}}>
-                                    <Control.Select model=".contactType" name="contactType" className="form-control">
+                                    <Control.select model=".contactType" name="contactType" className="form-control">
                                         <option>Tel.</option>
                                         <option>Email</option>
-                                    </Control.Select>
+                                    </Control.select>
                                 </Col>
                             </Row>
                             <Row className="form-group">
                                 <Label htmlFor="message" md={2}>Your Feedback</Label>
                                 <Col md={10}>
-                                    <Control.Textarea model=".message" id="message" name="message" rows="12" className="form-control"/>
+                                    <Control.textarea model=".message" id="message" name="message" rows="12" className="form-control"/>
                                 </Col>
                             </Row>
                             <Row className="form-group">
