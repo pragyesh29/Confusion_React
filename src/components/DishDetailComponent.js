@@ -134,26 +134,26 @@ import {FadeTransform, Fade, Stagger} from 'react-animation-components';
                                 <Row className="form-group">
                                     <Label htmlFor="firstname" md={2}>Rating</Label>
                                     <Col md={10}>
-                                        <Control.Select model=".rating" id="rating" name="rating" className="form-control">
+                                        <Control.select model=".rating" id="rating" name="rating" className="form-control">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
                                             <option>4</option>
                                             <option>5</option>
-                                        </Control.Select>
+                                        </Control.select>
                                     </Col>
                                 </Row>
                                 <Row className="form-group">
                                     <Label htmlFor="Name" md={2}>Your Name</Label>
                                     <Col md={10}>
-                                        <Control.Text model=".name" id="name" name="name" placeholder="Your Name" className="form-control" validators={{required, minLen:minLen(3), maxLen:maxLen(15)}}></Control.Text>
+                                        <Control.text model=".name" id="name" name="name" placeholder="Your Name" className="form-control" validators={{required, minLen:minLen(3), maxLen:maxLen(15)}}></Control.text>
                                         <Errors className="text-danger" model=".name" show="touched" messages={{required: 'Required field. ', minLen: 'Must be greater than 2 characters', maxLen: 'Must be 15 characters or less'}}/>
                                     </Col>
                                 </Row>
                                 <Row className="form-group">
                                     <Label htmlFor="Comment" md={2}>Comment</Label>
                                     <Col md={10}>
-                                        <Control.Textarea model=".comment" id="comment" name="comment" rows="6" className="form-control"/>
+                                        <Control.textarea model=".comment" id="comment" name="comment" rows="6" className="form-control"/>
                                     </Col>
                                 </Row>
                                 <Row>
