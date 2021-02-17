@@ -218,7 +218,7 @@ export const postFeedback = (firstname, lastname, telnum, email, agree, contactT
         .then(response => {
             var str = 'Thank you for your feedback \n';
             for(var i in response){
-                str += i + ": " + '"' + response[i]+ '";';
+                str += i + ': "' + response[i]+ '";';
             }
             alert(str);
         })
